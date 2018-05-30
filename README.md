@@ -2,9 +2,9 @@
 
 ## install
 
-mkdir ~/.config
-cd ~/.config
-git clone https://github.com/irukasano/config.fish.git
+    mkdir ~/.config
+    cd ~/.config
+    git clone https://github.com/irukasano/config.fish.git
 
 
 
