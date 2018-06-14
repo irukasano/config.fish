@@ -15,7 +15,7 @@
 
     mkdir ~/.config
     cd ~/.config
-    git clone https://github.com/irukasano/config.fish.git
+    git clone https://github.com/irukasano/config.fish.git fish
 
 
 
