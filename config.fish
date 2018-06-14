@@ -4,27 +4,27 @@
 ## -----------------------------------------------------
 # for bash command history 
 # cf) https://superuser.com/questions/719531/what-is-the-equivalent-of-bashs-and-in-the-fish-shell
-function bind_bang
-    switch (commandline -t)[-1]
-        case "!"
-            commandline -t $history[1]; commandline -f repaint
-        case "*"
-            commandline -i !
-    end
-end
-
-function bind_dollar
-    switch (commandline -t)[-1]
-        case "!"
-            commandline -t ""
-            commandline -f history-token-search-backward
-        case "*"
-            commandline -i '$'
-    end
-end
-
-bind -M insert ! bind_bang
-bind -M insert '$' bind_dollar
+#function bind_bang
+#    switch (commandline -t)[-1]
+#        case "!"
+#            commandline -t $history[1]; commandline -f repaint
+#        case "*"
+#            commandline -i !
+#    end
+#end
+#
+#function bind_dollar
+#    switch (commandline -t)[-1]
+#        case "!"
+#            commandline -t ""
+#            commandline -f history-token-search-backward
+#        case "*"
+#            commandline -i '$'
+#    end
+#end
+#
+#bind -M insert ! bind_bang
+#bind -M insert '$' bind_dollar
 
 ## -----------------------------------------------------
 # fish git prompt
