@@ -21,16 +21,18 @@ CentOS 6 の場合は、 root で下記のコマンドを実行してくださ�
     yum install fish
 
 
+### install fish config(this repo)
+
+インストールしたいユーザーで以下を行います。
+
+    cd ~/.config
+    mv fish fish.bak
+    git clone https://github.com/irukasano/config.fish.git fish
+
 ### install fzf
 
     git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
     ~/.fzf/install
-
-### install fish config(this repo)
-
-    mkdir ~/.config
-    cd ~/.config
-    git clone https://github.com/irukasano/config.fish.git fish
 
 
 
