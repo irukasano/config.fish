@@ -4,6 +4,8 @@
 
 ### install fish shell
 
+root にて
+
 CentOS のバージョン確認
 
     cat /etc/redhat-release 
@@ -24,6 +26,9 @@ CentOS 6 の場合は、 root で下記のコマンドを実行してくださ�
 
 ### install fiserman
 
+インストールしたいユーザーで以下を行います。
+
+    fish
     curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
 
 ### install fzf
@@ -31,8 +36,6 @@ CentOS 6 の場合は、 root で下記のコマンドを実行してくださ�
     fisher add fzf
 
 ### install fish config(this repo)
-
-インストールしたいユーザーで以下を行います。
 
     cd ~/.config
     mv fish fish.bak
