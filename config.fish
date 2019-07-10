@@ -46,7 +46,7 @@ end
 # User specific aliases and functions
 alias gff="git flow feature"
 # alias glg="git log --pretty=format:\"%h (%an %ad) %s\" --graph"
-alias glg="git log --pretty=format:'%C(red reverse)%d%Creset%C(white reverse) %h% Creset %C(green reverse) %an %Creset %C(cyan)%ad%Creset%n%C(white bold)%w(80)%s%Creset%n%w(80,2,2)%b' --graph --date-order"
+alias glg="git log --pretty=format:'%C(red reverse)%d%Creset%C(blue reverse) %h% Creset %C(blue reverse) %an %Creset %C(cyan)%ad%Creset%n%C(white bold)%w(80)%s%Creset%n%w(80,2,2)%b' --graph --date-order"
 alias vi="vim"
 alias view="vim -R"
 
