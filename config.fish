@@ -26,6 +26,9 @@
 #bind -M insert ! bind_bang
 #bind -M insert '$' bind_dollar
 
+# encoding
+set -x LANG ja_JP.UTF-8
+
 ## -----------------------------------------------------
 # fish git prompt
 set __fish_git_prompt_showdirtystate 'yes'
