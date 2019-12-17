@@ -40,6 +40,7 @@ set __fish_git_prompt_showcolorhints 'yes'
 
 ## -----------------------------------------------------
 ## custom command 
+fish_vi_key_bindings 
 
 ## cd後にls 
 function cd 
