@@ -53,3 +53,5 @@ alias glg="git log --pretty=format:'%C(red reverse)%d%Creset%C(blue reverse) %h%
 alias vi="vim"
 alias view="vim -R"
 
+set PATH ~/scripts $PATH
+
