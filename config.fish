@@ -56,3 +56,6 @@ alias view="vim -R"
 
 set PATH ~/scripts $PATH
 
+set LESSOPEN "~/dotfiles/lessopen.sh %s"
+set LESSCLOSE "~/dotfiles/lessclose.sh %s %s"
+
