@@ -56,6 +56,9 @@ alias view="vim -R"
 
 set PATH ~/scripts $PATH
 
-set LESSOPEN "~/dotfiles/lessopen.sh %s"
-set LESSCLOSE "~/dotfiles/lessclose.sh %s %s"
+set -x LESS "-R"
+#set -x LESSOPEN "~/dotfiles/lessopen.sh %s"
+#set -x LESSOPEN "||/usr/bin/src-hilite-lesspipe.sh %s"
+set -x LESSOPEN "||/usr/bin/lesspipe.sh %s"
+set -x LESSCLOSE "~/dotfiles/lessclose.sh %s %s"
 
