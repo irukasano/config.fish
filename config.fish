@@ -56,11 +56,11 @@ alias view="vim -R"
 
 set PATH ~/scripts $PATH
 
-set -x LESS "-R"
+set -x LESS "-R -g -j10 --no-init --quit-if-one-screen"
 #set -x LESSOPEN "~/dotfiles/lessopen.sh %s"
 #set -x LESSOPEN "||/usr/bin/src-hilite-lesspipe.sh %s"
 set -x LESSOPEN "||/usr/bin/lesspipe.sh %s"
-set -x LESSCLOSE "~/dotfiles/lessclose.sh %s %s"
+#set -x LESSCLOSE "~/dotfiles/lessclose.sh %s %s"
 
 set -x LESS_TERMCAP_mb (printf "\e[1;32m")
 set -x LESS_TERMCAP_md (printf "\e[1;32m")
