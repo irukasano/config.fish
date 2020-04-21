@@ -26,8 +26,16 @@
 #bind -M insert ! bind_bang
 #bind -M insert '$' bind_dollar
 
+source ~/.config/fish/aliases.fish
+source ~/.config/fish/functions.fish
+
 # encoding
 set -x LANG ja_JP.UTF-8
+
+# custom command 
+fish_vi_key_bindings 
+
+set PATH ~/scripts $PATH
 
 ## -----------------------------------------------------
 # fish git prompt
@@ -39,22 +47,6 @@ set __fish_git_prompt_show_informative_status 'yes'
 set __fish_git_prompt_showcolorhints 'yes'
 
 ## -----------------------------------------------------
-## custom command 
-fish_vi_key_bindings 
-
-## cd後にls 
-function cd 
-    builtin cd $argv; and ls
-end
-
-# User specific aliases and functions
-alias gff="git flow feature"
-# alias glg="git log --pretty=format:\"%h (%an %ad) %s\" --graph"
-alias glg="git log --pretty=format:'%C(red reverse)%d%Creset%C(blue reverse) %h% Creset %C(blue reverse) %an %Creset %C(cyan)%ad%Creset%n%C(white bold)%w(80)%s%Creset%n%w(80,2,2)%b' --graph --date-order"
-alias vi="vim"
-alias view="vim -R"
-
-set PATH ~/scripts $PATH
 
 set -x LESS "-R -g -j10 --no-init --quit-if-one-screen"
 #set -x LESSOPEN "~/dotfiles/lessopen.sh %s"
@@ -69,4 +61,7 @@ set -x LESS_TERMCAP_se (printf "\e[0m")
 set -x LESS_TERMCAP_so (printf "\e[01;33m")
 set -x LESS_TERMCAP_ue (printf "\e[0m")
 set -x LESS_TERMCAP_us (printf "\e[1;4;31m")
+
+
+
 
