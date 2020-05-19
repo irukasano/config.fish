@@ -19,7 +19,7 @@ CentOS 7 の場合は、 root で下記のコマンドを実行してくださ�
 CentOS 6 の場合は、 root で下記のコマンドを実行してください:
 
     cd /etc/yum.repos.d/
-    wget https://download.opensuse.org/repositories/shells:fish/RHEL_6/shells:fish.repo
+    wget  https://download.opensuse.org/repositories/shells:/fish/RedHat_RHEL-6/shells:fish.repo
     yum install fish
 
 
