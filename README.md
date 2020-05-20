@@ -33,7 +33,7 @@ CentOS 6 の場合は、 root で下記のコマンドを実行してくださ�
 
 ### install fzf
 
-    fisher add fzf
+    fisher add jethrokuan/fzf
 
 ### install fish config(this repo)
 
