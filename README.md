@@ -31,19 +31,14 @@ CentOS 6 の場合は、 root で下記のコマンドを実行してくださ�
     fish
     curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
 
-### install fzf
-
-    fisher add jethrokuan/fzf
-
 ### install fish config(this repo)
 
     cd ~/.config
     mv fish fish.bak
     git clone https://github.com/irukasano/config.fish.git fish
 
+### install fzf
 
-### update fzf
-
-    fisher fzf
+    fisher add jethrokuan/fzf
 
 
