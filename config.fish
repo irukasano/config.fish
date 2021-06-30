@@ -64,6 +64,6 @@ set -x LESS_TERMCAP_so (printf "\e[01;33m")
 set -x LESS_TERMCAP_ue (printf "\e[0m")
 set -x LESS_TERMCAP_us (printf "\e[1;4;31m")
 
-
+eval (dircolors -p | sed 's/DIR 01;34/DIR 01;37;44/' | dircolors - -c | sed 's/^setenv/set -x/')
 
 
