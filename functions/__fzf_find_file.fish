@@ -27,3 +27,4 @@ function __fzf_find_file -d "List files and folders"
     end
     commandline -f repaint
 end
+

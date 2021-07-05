@@ -61,3 +61,4 @@ function __fzf_open -d "Open files and directories."
     commandline -f repaint
     return $open_status
 end
+

@@ -166,3 +166,4 @@ function __fzf_complete_opts -d 'fzf options for fish tab completion'
         echo $FZF_COMPLETE_OPTS
     end
 end
+
