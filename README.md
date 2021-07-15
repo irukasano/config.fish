@@ -9,11 +9,17 @@ root にて
 CentOS のバージョン確認
 
     cat /etc/redhat-release 
-    
+
+CentOS 8 の場合は、 root で下記のコマンドを実行してください:
+
+    cd /etc/yum.repos.d/
+    wget https://download.opensuse.org/repositories/shells:fish:release:3/CentOS_8/shells:fish:release:3.repo
+    yum install fish
+
 CentOS 7 の場合は、 root で下記のコマンドを実行してください:
 
     cd /etc/yum.repos.d/
-    wget https://download.opensuse.org/repositories/shells:fish/RHEL_7/shells:fish.repo
+    wget https://download.opensuse.org/repositories/shells:fish:release:3/CentOS_7/shells:fish:release:3.repo
     yum install fish
 
 CentOS 6 の場合は、 root で下記のコマンドを実行してください:
