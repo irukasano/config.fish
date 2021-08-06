@@ -39,7 +39,7 @@ CentOS 6 の場合は、 root で下記のコマンドを実行してくださ�
 
 ### install fzf
 
-    > fisher add jethrokuan/fzf
+    > fisher install jethrokuan/fzf
 
     $ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
     $ ~/.fzf/install
