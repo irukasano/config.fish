@@ -30,21 +30,25 @@ CentOS 6 の場合は、 root で下記のコマンドを実行してくださ�
 
 
 
-### install fiserman
+### install fisherman
 
 インストールしたいユーザーで以下を行います。
 
-    fish
-    curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
-
-### install fish config(this repo)
-
-    cd ~/.config
-    mv fish fish.bak
-    git clone https://github.com/irukasano/config.fish.git fish
+    $ fish
+    > curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
 
 ### install fzf
 
-    fisher add jethrokuan/fzf
+    > fisher add jethrokuan/fzf
 
+    $ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+    $ ~/.fzf/install
+
+### install fish config(this repo)
+
+    $ cd ~/.config
+    $ mv fish fish.bak
+    $ git clone https://github.com/irukasano/config.fish.git fish
+    $ fish
+    
 
