@@ -1,23 +1,28 @@
 
 # Navigation
 function ..    ; cd .. ; end
-function ...   ; cd ../.. ; end
-function ....  ; cd ../../.. ; end
-function ..... ; cd ../../../.. ; end
+function ..2   ; cd ../.. ; end
+function ..3   ; cd ../../.. ; end
+function ..4   ; cd ../../../.. ; end
 
 # Utilities
-function g        ; git $argv ; end
 function grep     ; command grep --color=auto $argv ; end
 
-# git flow 
+# git
+function g        ; git $argv ; end
 alias gf="git flow"
-
-# git flow feature
 alias gff="git flow feature"
-
-# git log
 alias glg="git log --pretty=format:'%C(red reverse)%d%Creset%C(blue reverse) %h% Creset %C(blue reverse) %an %Creset %C(cyan)%ad%Creset%n%C(white bold)%w(80)%s%Creset%n%w(80,2,2)%b' --graph --date-order"
 
+
+# Setting
+alias svimrc="vim ~/.vim_runtime"
+alias snvim="vim ~/.config/nvim/init.vim"
+alias sfish="vim ~/.config/fish"
+alias sdot="vim ~/dotfiles"
+
+# Other
 alias vi="vim"
 alias view="vim -R"
+alias la="clear && ls -la"
 
