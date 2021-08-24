@@ -8,6 +8,10 @@ function ..4   ; cd ../../../.. ; end
 # Utilities
 function grep     ; command grep --color=auto $argv ; end
 
+
+alias fcd="__fzf_cd"
+alias fopen="__fzf_open"
+
 # git
 function g        ; git $argv ; end
 alias gf="git flow"
