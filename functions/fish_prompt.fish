@@ -6,6 +6,6 @@ function fish_prompt
     #set_color normal
     #printf "%s " (__fish_git_prompt)
     #printf "\n\$ "
-    fishline -s $status USERHOST SIGSTATUS JOBS VFISH FULLPWD GIT WRITE CLOCK N ROOT
+    fishline -s $status USERHOST VFISH FULLPWD GIT WRITE JOBS STATUS CLOCK N ROOT
 end
 
