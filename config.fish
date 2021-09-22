@@ -2,7 +2,7 @@
 # fish_vi_key_bindings
 
 ## -----------------------------------------------------
-# for bash command history 
+# for bash command history
 # cf) https://superuser.com/questions/719531/what-is-the-equivalent-of-bashs-and-in-the-fish-shell
 #function bind_bang
 #    switch (commandline -t)[-1]
@@ -32,8 +32,8 @@ source ~/.config/fish/functions.fish
 # encoding
 set -x LANG ja_JP.UTF-8
 
-# custom command 
-fish_vi_key_bindings 
+# custom command
+fish_vi_key_bindings
 
 set PATH ~/scripts $PATH
 
@@ -66,4 +66,9 @@ set -x LESS_TERMCAP_us (printf "\e[1;4;31m")
 
 eval (dircolors -p | sed 's/DIR 01;34/DIR 01;37;44/' | dircolors - -c | sed 's/^setenv/set -x/')
 
+
+if status is-interactive
+    set FLINE_PATH $HOME/.config/fish/fishline
+    source $FLINE_PATH/init.fish
+end
 

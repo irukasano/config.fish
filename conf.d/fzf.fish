@@ -50,12 +50,14 @@ if test "$FZF_DISABLE_KEYBINDINGS" -ne 1
     end
 end
 
+function _fzf_uninstall -e fzf_uninstall
+    bind --user \
+        | string replace --filter --regex -- "bind (.+)( '?__fzf.*)" 'bind -e $1' \
+        | source
 
-function fzf_uninstall -e fzf_uninstall
-    # disabled until we figure out a sensible way to ensure user overrides
-    # are not erased
-    # set -l _vars (set | command grep -E "^FZF.*\$" | command awk '{print $1;}')
-    # for var in $_vars
-    #     eval (set -e $var)
-    # end
+    set --names \
+        | string replace --filter --regex '(^FZF)' 'set --erase $1' \
+        | source
+
+    functions --erase _fzf_uninstall
 end
