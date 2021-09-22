@@ -49,6 +49,8 @@ CentOS 6 の場合は、 root で下記のコマンドを実行してくださ�
     $ cd ~/.config
     $ mv fish fish.bak
     $ git clone https://github.com/irukasano/config.fish.git fish
+    $ cd fish
+    $ git submodule update --init
     $ fish
     
 
