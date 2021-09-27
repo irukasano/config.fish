@@ -30,3 +30,6 @@ alias vi="vim"
 alias view="vim -R"
 alias la="clear && ls -la"
 
+# phpunit
+alias phpunit="vendor/bin/phpunit --colors=always"
+
