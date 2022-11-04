@@ -36,6 +36,7 @@ set -x LANG ja_JP.UTF-8
 fish_vi_key_bindings
 
 set PATH ~/scripts $PATH
+set -x EDITOR vim
 
 ## -----------------------------------------------------
 # fish git prompt
