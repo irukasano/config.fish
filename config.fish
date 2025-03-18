@@ -71,5 +71,6 @@ eval (dircolors -p | sed 's/DIR 01;34/DIR 01;37;44/' | dircolors - -c | sed 's/^
 if status is-interactive
     set FLINE_PATH $HOME/.config/fish/fishline
     source $FLINE_PATH/init.fish
+    source ~/.config/fish/themes/cyberpunk2077.fish
 end
 

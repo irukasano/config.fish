@@ -9,7 +9,7 @@ SETUVAR FZF_TMUX_HEIGHT:40\x25
 SETUVAR --export LSCOLORS:Exfxcxdxbxegedabagacad
 SETUVAR __fish_init_1_50_0:\x1d
 SETUVAR __fish_init_2_3_0:\x1d
-SETUVAR __fish_initialized:3100
+SETUVAR __fish_initialized:3400
 SETUVAR fish_color_autosuggestion:555\x1eyellow
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:brgreen
@@ -39,4 +39,5 @@ SETUVAR fish_pager_color_completion:normal
 SETUVAR fish_pager_color_description:555\x1eyellow
 SETUVAR fish_pager_color_prefix:cyan
 SETUVAR fish_pager_color_progress:cyan
+SETUVAR fish_pager_color_selected_background:\x2dr
 SETUVAR fish_user_paths:/home/admin/\x2efzf/bin\x1e/home/user/\x2efzf/bin
