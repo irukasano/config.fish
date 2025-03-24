@@ -51,8 +51,8 @@ set FLCLR_CLOCK_BG          70978e   # 罫線色 (落ち着いた青)
 set FLCLR_CLOCK_FG          ffffff   # 白
 
 # Color for USERHOST segment (ユーザーとホスト名)
-set FLCLR_USERHOST_BG       ca6d60   # 赤みのあるサブカラー
-set FLCLR_USERHOST_FG       ffffff   # 白
+set FLCLR_USERHOST_BG       F7D653   # 黄色のあるサブカラー
+set FLCLR_USERHOST_FG       382E05   # 白
 
 # Color for JOBS segment (バックグラウンドジョブ)
 set FLCLR_JOBS_BG           86c1b9   # シアン寄りの青
