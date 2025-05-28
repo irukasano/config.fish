@@ -74,3 +74,9 @@ if status is-interactive
     source ~/.config/fish/themes/cyberpunk2077.fish
 end
 
+if test "$TERM_PROGRAM" = "vscode"
+    set -x GIT_EDITOR "code --wait"
+else
+    set -x GIT_EDITOR "vim"
+end
+
