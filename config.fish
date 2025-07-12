@@ -80,3 +80,13 @@ else
     set -x GIT_EDITOR "vim"
 end
 
+if set -q DISPLAY
+    # GUIセッションでのみ ssh を smart-ssh に置き換える
+    function ssh
+        ~/bin/smart-ssh.sh $argv
+    end
+
+    set -x SVN_SSH "command ssh -F $HOME/.ssh/config.windows"
+end
+
+
