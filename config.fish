@@ -74,6 +74,16 @@ if status is-interactive
     source ~/.config/fish/themes/cyberpunk2077.fish
 end
 
+# gpg 用: TERM=xterm で動作させる
+function gpg
+    env TERM=xterm command gpg $argv
+end
+
+# git 用: TERM=xterm で動作させる
+function git
+    env TERM=xterm command git $argv
+end
+
 if test "$TERM_PROGRAM" = "vscode"
     set -x GIT_EDITOR "code --wait"
 else
@@ -89,4 +99,4 @@ if set -q DISPLAY
     set -x SVN_SSH "command ssh -F $HOME/.ssh/config.windows"
 end
 
-
+set -x GPG_TTY (tty)
