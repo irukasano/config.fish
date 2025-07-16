@@ -76,12 +76,12 @@ end
 
 # gpg 用: TERM=xterm で動作させる
 function gpg
-    env TERM=xterm command gpg $argv
+    env TERM=xterm gpg $argv
 end
 
 # git 用: TERM=xterm で動作させる
 function git
-    env TERM=xterm command git $argv
+    env TERM=xterm git $argv
 end
 
 if test "$TERM_PROGRAM" = "vscode"
