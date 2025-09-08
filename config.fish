@@ -74,6 +74,14 @@ if status is-interactive
     source ~/.config/fish/themes/cyberpunk2077.fish
 end
 
+# nvm.fish の初期化とデフォルトバージョンの自動読み込み
+if status is-interactive
+    # デフォルトバージョンが設定されていれば自動で nvm use
+    if set -q nvm_default_version
+        nvm use --silent $nvm_default_version
+    end
+end
+
 # gpg 用: TERM=xterm で動作させる
 function gpg
     env TERM=xterm gpg $argv
